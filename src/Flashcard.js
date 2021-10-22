@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import data from "bootstrap/js/src/dom/data"
 import FlashcardData from "./data/flashcards.json"
 
+
 export default function Flashcard({ flashcard }) {
     const [flip, setFlip] = useState(false)
     const [height, setHeight] = useState('initial')
@@ -34,14 +35,14 @@ export default function Flashcard({ flashcard }) {
              style={{ height : height}}
             onClick={/*() => setCorrect(correct) && */() => setFlip(!flip)}>
 
-            <div className={" front " +( color? "text-success": "text-danger")} ref={frontEl}>
+            <div className={" front " + (color? "text-success": "text-danger")} ref={frontEl}>
                 {flashcard.question}
             </div>
 
             <div className="back" ref={backEl}>
                 {flashcard.answer}
-                <Button onClick={()=>handleClick(true)} /*style={{backgroundColor:"green"}}*/ className="btn-success" variant="success" >Correct</Button>
-                <Button onClick={()=>handleClick(false)} /*style={{backgroundColor:"red"}}*/ className="btn-danger" variant="danger" >Incorrect</Button>
+                <Button onClick={()=>handleClick(true)}  className="btn-success" variant="success" >Correct</Button>
+                <Button onClick={()=>handleClick(false)}  className="btn-danger" variant="danger" >Incorrect</Button>
             </div>
 
             {/* {flip ? flashcard.answer : flashcard.question} */}
