@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "question": "Hallo",
+    "answer": "Здраво"
+  },
+  {
+    "id": 2,
+    "question": "sein",
+    "answer": "Сум"
+  },
+  {
+    "id": 3,
+    "question": "haben",
+    "answer": "Има"
+  },
+  {
+    "id": 4,
+    "question": "kaufen",
+    "answer": "Купува"
+  },
+  {
+    "id": 5,
+    "question": "laufen",
+    "answer": "трча"
+  },
+  {
+    "id": 6,
+    "question": "lesen",
+    "answer": "чита"
+  },
+  {
+    "id": 7,
+    "question": "schreiben",
+    "answer": "пишува"
+  },
+  {
+    "id": 8,
+    "question": "sollen",
+    "answer": "треба"
+  },
+  {
+    "id": 9,
+    "question": "dürfen",
+    "answer": "смее"
+  },
+  {
+    "id": 10,
+    "question": "wollen",
+    "answer": "сака"
+  },
+  {
+    "id": 11,
+    "question": "Wasser",
+    "answer": "вода"
+  },
+  {
+    "id": 12,
+    "question": "schlafen",
+    "answer": "спи"
+  }
+
+]
