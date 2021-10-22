@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from "react";
 import './app.css'
 import Button from 'react-bootstrap/Button';
-import data from "bootstrap/js/src/dom/data";
+import data from "bootstrap/js/src/dom/data"
 import FlashcardData from "./data/flashcards.json"
 
 export default function Flashcard({ flashcard }) {
