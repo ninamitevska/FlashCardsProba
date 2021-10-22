@@ -1,15 +1,16 @@
 import React, {useEffect, useState} from "react";
 import FlashcardList from "./FlashcardList";
 import FlashcardData from "./data/flashcards.json";
+import LanguageData from "./data/languages.json"
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [flashcards] = useState(FlashcardData)
-  const [languages, setLanguages] = useState(FlashcardData)
+  const [languages, setLanguages] = useState(LanguageData)
 
   useEffect(() =>{
 
-        setLanguages(FlashcardData)
+        setLanguages(LanguageData)
 
   }, [])
 
