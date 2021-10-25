@@ -3,6 +3,7 @@ import Flashcard from "./Flashcard";
 import FlashcardData from "./data/flashcards.json"
 
 export default function FlashcardList({ flashcards }){
+
     return(
         <div className="card-grid">
             {FlashcardData.map(flashcard => {

@@ -35,7 +35,8 @@ export default function Flashcard({ flashcard }) {
              style={{ height : height}}
             onClick={/*() => setCorrect(correct) && */() => setFlip(!flip)}>
 
-            <div className={" front " + (color? "text-success": "text-danger")} ref={frontEl}>
+            <div className={" front " + (color ? "text-success" : "text-danger")} ref={frontEl}>
+
                 {flashcard.question}
             </div>
 
