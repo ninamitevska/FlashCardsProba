@@ -2,13 +2,12 @@ import React, {useEffect, useRef, useState} from "react";
 import FlashcardList from "./FlashcardList";
 import FlashcardData from "./data/flashcards.json";
 import LanguageData from "./data/languages.json"
-import Flashcard from "./Flashcard";
 //import axios from "request";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-  const [flashcards,setFlashcards] = useState(FlashcardData)
+  const [flashcards] = useState(FlashcardData)
   const [languages, setLanguages] = useState(LanguageData)
 
     const languageEl = useRef(LanguageData)
