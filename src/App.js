@@ -7,11 +7,11 @@ import LanguageData from "./data/languages.json"
 
 
 function App() {
-  const [flashcards] = useState(FlashcardData)
+  const [flashcards,setFlashcards] = useState(FlashcardData)
   const [languages, setLanguages] = useState(LanguageData)
 
     const languageEl = useRef(LanguageData)
-    const amountEl = useRef()
+    const amountEl = useRef(FlashcardData)
 
     const CardShuffler = (arr) => {
         for (let i = arr.length - 1; i > 0; i--) {
@@ -21,17 +21,15 @@ function App() {
         return arr;
     };
 
-
   useEffect(() =>{
 
         setLanguages(LanguageData)
 
   }, [])
 
-
   return (
       <>
-      <form className="header">
+      <form className="header" /*onSubmit={handleSubmit}*/>
         <div className="form-group">
           <label htmlFor="language">Language that you know</label>
           <select id="language" ref={languageEl}>
@@ -50,10 +48,10 @@ function App() {
           </div>
         <div className="form-group">
           <label htmlFor="amount">Number of words</label>
-          <input type="number" id="amount" min="1" step="1" defaultValue={10} ref={amountEl}/>
+          <input type="number" id="amount" min="1" step="1" defaultValue={10} ref={amountEl} />
         </div>
         <div className="form-group">
-          <button className="btn">Generate</button>
+          <button className="btn" /*onClick={CardAmount(flashcards)}*/>Generate</button>
         </div>
           <div className="form-group">
               <button className="btn" onClick={CardShuffler(flashcards)}>Shuffle</button>
@@ -67,35 +65,40 @@ function App() {
   );
 }
 
-/*   function decodeString(str) {
-        const textArea = document.createElement('textarea')
-        textArea.innerHTML= str
-        return textArea.value
-    }
+/*  function decodeString(str) {
+      const textArea = document.createElement('textarea')
+      textArea.innerHTML= str
+      return textArea.value
+  }
 
-    function handleSubmit(e) {
-        e.preventDefault()
-            axios
-            .get(FlashcardData, {
-                params: {
-                    amount: amountEl.current.value,
-                    language: languageEl.current.value
-                }
-            })
-                .then(res => {
-                    setFlashcards(res.data.results.map((questionItem, index) => {
-                        const answer = decodeString(questionItem)
-                        return {
-                            id: `${index}-${Date.now()}`,
-                            question: decodeString(questionItem.question),
-                            answer: answer
-                        }
-                    }))
-                })
+  function handleSubmit(e) {
+      e.preventDefault()
+      axios
+          .get(FlashcardData, {
+              params: {
+                  amount: amountEl.current.value,
+                  language: languageEl.current.value
+              }
+          })
+          .then(res => {
+              setFlashcards(res.data.results.map((questionItem, index) => {
+                  const answer = decodeString(questionItem)
+                  return {
+                      id: `${index}-${Date.now()}`,
+                      question: decodeString(questionItem.question),
+                      answer: answer
+                  }
+              }))
+          })
 
   }
 */
 
+/* const CardAmount = (arr) => {
+
+      return arr.elements.length;
+  };
+*/
 
 /*
 const SAMPLE_FLASHCARDS = [
