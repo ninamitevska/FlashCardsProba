@@ -141,3 +141,6 @@ Button.btn-danger:hover {
 .text-default{
     color: black;
 }
+#shuffle {
+    background-color: lightseagreen;
+}

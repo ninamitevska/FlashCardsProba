@@ -2,16 +2,17 @@ import React, {useEffect, useRef, useState} from "react";
 import FlashcardList from "./FlashcardList";
 import FlashcardData from "./data/flashcards.json";
 import LanguageData from "./data/languages.json"
+//import {count} from "./Flashcard";
 //import axios from "request";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-  const [flashcards,setFlashcards] = useState(FlashcardData)
-  const [languages, setLanguages] = useState(LanguageData)
-
+    const [flashcards] = useState(FlashcardData)
+    const [languages, setLanguages] = useState(LanguageData)
     const languageEl = useRef(LanguageData)
     const amountEl = useRef(FlashcardData)
+
 
     const CardShuffler = (arr) => {
         for (let i = arr.length - 1; i > 0; i--) {
@@ -54,7 +55,7 @@ function App() {
           <button className="btn" /*onClick={CardAmount(flashcards)}*/>Generate</button>
         </div>
           <div className="form-group">
-              <button className="btn" onClick={CardShuffler(flashcards)}>Shuffle</button>
+              <button className="btn" id="shuffle" onClick={CardShuffler(flashcards)}>Shuffle</button>
           </div>
       </form>
 
