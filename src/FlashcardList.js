@@ -14,7 +14,7 @@ export default function FlashcardList({flashcards}){
             {flashCardsList}
         </div>
     );
-
+///нејќе да комитне
     /*    const [flashcard, setCards] = useState(FlashcardData.slice(0,100));
     const [pageNumber, setPageNumber] = useState(0)
     const flashcardsPerPage = 24
