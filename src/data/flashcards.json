@@ -58,6 +58,65 @@
     "id": 12,
     "question": "schlafen",
     "answer": "спи"
+  },
+  {
+    "id": 13,
+    "question": "Augen",
+    "answer": "очи"
+  },
+  {
+    "id": 14,
+    "question": "Nase",
+    "answer": "нос"
+  },
+  {
+    "id": 15,
+    "question": "Kopf",
+    "answer": "глава"
+  },
+  {
+    "id": 16,
+    "question": "Geld",
+    "answer": "пари"
+  },
+  {
+    "id": 17,
+    "question": "Fuß",
+    "answer": "стапало"
+  },
+  {
+    "id": 18,
+    "question": "Gesicht",
+    "answer": "лице"
+  },
+  {
+    "id": 19,
+    "question": "Katze",
+    "answer": "мачка"
+  },
+  {
+    "id": 20,
+    "question": "Hund",
+    "answer": "куче"
+  },
+  {
+    "id": 21,
+    "question": "Mädchen",
+    "answer": "девојче"
+  },
+  {
+    "id": 22,
+    "question": "Junge",
+    "answer": "момче"
+  },
+  {
+    "id": 23,
+    "question": "Mutter",
+    "answer": "мајка"
+  },
+  {
+    "id": 24,
+    "question": "Vater",
+    "answer": "татко"
   }
-
 ]

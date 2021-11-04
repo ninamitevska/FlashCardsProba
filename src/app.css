@@ -96,6 +96,7 @@ Button.btn-danger:hover {
 }
 
 .card{
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,4 +129,18 @@ Button.btn-danger:hover {
 
 .card .back{
     transform: rotateY(180deg);
+}
+
+.text-success{
+    color: #07f370;
+}
+
+.text-danger{
+    color: #cb0909;
+}
+.text-default{
+    color: black;
+}
+#shuffle {
+    background-color: lightseagreen;
 }
