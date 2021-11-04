@@ -1,19 +1,15 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useState} from "react";
 import FlashcardList from "./FlashcardList";
 import FlashcardData from "./data/flashcards.json";
 import LanguageData from "./data/languages.json"
-//import {count} from "./Flashcard";
-//import axios from "request";
-//import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 function App() {
     const [flashcards] = useState(FlashcardData)
     const [languages, setLanguages] = useState(LanguageData)
+
     const languageOptions = languages.map(language => {
         return <option value={language.id} key={language.id}>{language.name}</option>
     });
-
 
     const cardShuffler = (arr) => {
         return arr.sort( () => .5 - Math.random() );
