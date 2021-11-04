@@ -8,8 +8,11 @@ export default function Flashcard({ flashcard }) {
     const [flip, setFlip] = useState(false)
     const [height, setHeight] = useState('initial')
     const [color, setColor] = useState(false)
-    const [count, setCount] = useState(0);
-    const [correct,setCorrect] = useState(false);
+    let cardClass = color? "front text-success": "front text-danger";
+    let flipClass = `card ${flip ? 'flip' : ''}`
+
+    //const [count, setCount] = useState(0);
+    //const [correct,setCorrect] = useState(false);
     //const [correct, setCorrect] = useState(false)
 
     const frontEl = useRef()
@@ -45,10 +48,10 @@ export default function Flashcard({ flashcard }) {
 
     return(
         <>
-        <div className={`card ${flip ? 'flip' : ''}`}
+        <div className={flipClass}
              style={{ height : height}}
             onClick={/*() => setCorrect(correct) && */() => setFlip(!flip)}>
-            <div className={" front " + (color ? "text-success" : "text-danger")} ref={frontEl}>
+            <div className={cardClass} ref={frontEl}>
                 {flashcard.question}
             </div>
 
