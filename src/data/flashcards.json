@@ -1,0 +1,123 @@
+{"flash_cards": [
+  {
+    "id": 1,
+    "question": "Hallo",
+    "answer": "Здраво"
+  },
+  {
+    "id": 2,
+    "question": "sein",
+    "answer": "Сум"
+  },
+  {
+    "id": 3,
+    "question": "haben",
+    "answer": "Има"
+  },
+  {
+    "id": 4,
+    "question": "kaufen",
+    "answer": "Купува"
+  },
+  {
+    "id": 5,
+    "question": "laufen",
+    "answer": "трча"
+  },
+  {
+    "id": 6,
+    "question": "lesen",
+    "answer": "чита"
+  },
+  {
+    "id": 7,
+    "question": "schreiben",
+    "answer": "пишува"
+  },
+  {
+    "id": 8,
+    "question": "sollen",
+    "answer": "треба"
+  },
+  {
+    "id": 9,
+    "question": "dürfen",
+    "answer": "смее"
+  },
+  {
+    "id": 10,
+    "question": "wollen",
+    "answer": "сака"
+  },
+  {
+    "id": 11,
+    "question": "Wasser",
+    "answer": "вода"
+  },
+  {
+    "id": 12,
+    "question": "schlafen",
+    "answer": "спи"
+  },
+  {
+    "id": 13,
+    "question": "Augen",
+    "answer": "очи"
+  },
+  {
+    "id": 14,
+    "question": "Nase",
+    "answer": "нос"
+  },
+  {
+    "id": 15,
+    "question": "Kopf",
+    "answer": "глава"
+  },
+  {
+    "id": 16,
+    "question": "Geld",
+    "answer": "пари"
+  },
+  {
+    "id": 17,
+    "question": "Fuß",
+    "answer": "стапало"
+  },
+  {
+    "id": 18,
+    "question": "Gesicht",
+    "answer": "лице"
+  },
+  {
+    "id": 19,
+    "question": "Katze",
+    "answer": "мачка"
+  },
+  {
+    "id": 20,
+    "question": "Hund",
+    "answer": "куче"
+  },
+  {
+    "id": 21,
+    "question": "Mädchen",
+    "answer": "девојче"
+  },
+  {
+    "id": 22,
+    "question": "Junge",
+    "answer": "момче"
+  },
+  {
+    "id": 23,
+    "question": "Mutter",
+    "answer": "мајка"
+  },
+  {
+    "id": 24,
+    "question": "Vater",
+    "answer": "татко"
+  }
+]
+}
