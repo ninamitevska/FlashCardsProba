@@ -1,123 +1,99 @@
 {"flash_cards": [
   {
     "id": 1,
-    "question": "Hallo",
-    "answer": "Здраво"
+    "question": "Hallo"
   },
   {
     "id": 2,
-    "question": "sein",
-    "answer": "Сум"
+    "question": "sein"
   },
   {
     "id": 3,
-    "question": "haben",
-    "answer": "Има"
+    "question": "haben"
   },
   {
     "id": 4,
-    "question": "kaufen",
-    "answer": "Купува"
+    "question": "kaufen"
   },
   {
     "id": 5,
-    "question": "laufen",
-    "answer": "трча"
+    "question": "laufen"
   },
   {
     "id": 6,
-    "question": "lesen",
-    "answer": "чита"
+    "question": "lesen"
   },
   {
     "id": 7,
-    "question": "schreiben",
-    "answer": "пишува"
+    "question": "schreiben"
   },
   {
     "id": 8,
-    "question": "sollen",
-    "answer": "треба"
+    "question": "sollen"
   },
   {
     "id": 9,
-    "question": "dürfen",
-    "answer": "смее"
+    "question": "dürfen"
   },
   {
     "id": 10,
-    "question": "wollen",
-    "answer": "сака"
+    "question": "wollen"
   },
   {
     "id": 11,
-    "question": "Wasser",
-    "answer": "вода"
+    "question": "Wasser"
   },
   {
     "id": 12,
-    "question": "schlafen",
-    "answer": "спи"
+    "question": "schlafen"
   },
   {
     "id": 13,
-    "question": "Augen",
-    "answer": "очи"
+    "question": "Augen"
   },
   {
     "id": 14,
-    "question": "Nase",
-    "answer": "нос"
+    "question": "Nase"
   },
   {
     "id": 15,
-    "question": "Kopf",
-    "answer": "глава"
+    "question": "Kopf"
   },
   {
     "id": 16,
-    "question": "Geld",
-    "answer": "пари"
+    "question": "Geld"
   },
   {
     "id": 17,
-    "question": "Fuß",
-    "answer": "стапало"
+    "question": "Fuß"
   },
   {
     "id": 18,
-    "question": "Gesicht",
-    "answer": "лице"
+    "question": "Gesicht"
   },
   {
     "id": 19,
-    "question": "Katze",
-    "answer": "мачка"
+    "question": "Katze"
   },
   {
     "id": 20,
-    "question": "Hund",
-    "answer": "куче"
+    "question": "Hund"
   },
   {
     "id": 21,
-    "question": "Mädchen",
-    "answer": "девојче"
+    "question": "Mädchen"
   },
   {
     "id": 22,
-    "question": "Junge",
-    "answer": "момче"
+    "question": "Junge"
   },
   {
     "id": 23,
-    "question": "Mutter",
-    "answer": "мајка"
+    "question": "Mutter"
   },
   {
     "id": 24,
-    "question": "Vater",
-    "answer": "татко"
+    "question": "Vater"
   }
 ]
 }
