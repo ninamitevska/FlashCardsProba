@@ -1,21 +1,18 @@
-import React, {/*useEffect, useRef,*/ useState} from "react";
-import './app.css'
+import React, {useState} from "react";
+import '../app.css'
 import axios from 'axios';
 
-export default function Flashcard({flashcard}) {
+const Flashcard = (props) => {
+
     const [flip, setFlip] = useState(false)
-    //const [height, setHeight] = useState('initial')
-    //const [color, setColor] = useState(false)
-    //let cardClass = color ? "front text-success" : "front text-danger";
     let flipClass = `card ${flip ? 'flip' : ''}`
     const [wordClick, setWordClicked] = useState()
 
-
-    function get_words(question, correctWord) {
+    function get_words(question/*, correctWord*/) {
         axios.get(`http://localhost:5000/get_words`, {
             params: {
                 word_clicked: question,
-                correct_word: correctWord
+                /*correct_word: correctWord*/
             }
         }).then(res => setWordClicked(res.data))
     }
@@ -35,16 +32,18 @@ export default function Flashcard({flashcard}) {
             <div className={flipClass}
                  onClick={() => {
                      setFlip(!flip);
-                     get_words(flashcard.question)
+                     get_words(props.flashcard.question)
                  }}>
-                <div className="front" /*ref={frontEl}*/>
-                    {flashcard.question}
+                <div className="front">
+                    {props.flashcard.question}
                 </div>
 
-                <div className="back" /*ref={backEl}*/>
+                <div className="back">
                     {options}
                 </div>
             </div>
         </>
     );
 };
+
+export default Flashcard;

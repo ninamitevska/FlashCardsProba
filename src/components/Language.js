@@ -1,21 +1,13 @@
 import React, {useEffect, useState} from "react";
-import FlashcardList from "./FlashcardList";
-//import fcData from "./FlashcardList";
-// import FlashcardData from "./data/flashcards.json";
-//import LanguageData from "./data/languages.json"
-/*import Flashcard from "./Flashcard"
-import {
-    BrowserRouter as Router,
-    Route,
-    Routes
-} from "react-router-dom";*/
 import axios from "axios";
 
-const App = (props) => {
+const Languages = (props) => {
+
     // const [flashcards] = useState(fcData)
     const [languages, setLanguages] = useState()
     const [fromLanguage, setFromLanguage] = useState()
     const [toLanguage, setToLanguage] = useState()
+
     //const [fcData, setFlashcards] = useState([{}])
 
     function get_languages(languages) {
@@ -86,15 +78,8 @@ const App = (props) => {
 
     }
 
-
     return (
-        <>
-            {/*<Router>
-                <Routes>
-                    <Route path='/get_words' component={Flashcard}>
-                    </Route>
-                </Routes>
-            </Router>*/}
+        <div>
             <form className="header">
                 <div className="form-group">
                     <label htmlFor="language">Language that you know</label>
@@ -119,43 +104,9 @@ const App = (props) => {
                     {/*<button className="btn" onClick={cardShuffler(flashcards)} id="shuffle">Shuffle</button>*/}
                 </div>
             </form>
-
-            <div className="container">
-                <FlashcardList/>
-            </div>
-
-
-            {/*<div>*/}
-            {/*    {(typeof fcData.flashcards == 'undefined') ? (*/}
-            {/*      <p>Loading...</p>*/}
-            {/*    ) : (*/}
-            {/*        fcData.flashcards.map((flashcard, i ) => (*/}
-            {/*            <Flashcard key={i} flashcard={flashcard}></Flashcard>*/}
-            {/*        ))*/}
-            {/*    )}*/}
-            {/*</div>*/}
-
-
-        </>
+        </div>
     );
-}
-
-export default App;
-
-// const cardShuffler = (arr) => {
-//     return arr.sort( () => .5 - Math.random() );
-// };
-
-// useEffect(() => {
-//     fetch("/flashcards").then(
-//         FlashcardData => FlashcardData.json()
-//     ).then(
-//         fcData => {
-//             setFlashcards(fcData)
-//             console.log(fcData)
-//         }
-//     )
-// },[])
 
 
-
+};
+export default Languages;

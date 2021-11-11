@@ -1,9 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Flashcard from "./Flashcard";
 import axios from "axios";
-//import axios from "axios";
-// import FlashcardData from "./data/flashcards.json"
-export default function FlashcardList() {
+const FlashcardList = (props) => {
 
     const [fcData, setFlashcards] = useState([{}])
 
@@ -38,8 +36,11 @@ export default function FlashcardList() {
     });
 
     return (
+
         <div className="card-grid">
             {flashCardsList}
         </div>
     );
 };
+
+export default FlashcardList;
